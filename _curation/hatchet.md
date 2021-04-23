@@ -4,8 +4,7 @@ title: Hatchet
 category: Performance Data Analysis
 thumbnail:
 gallery:
-    <!-- - kurator.png
-    - kurator.png -->
+  - hatchet-logo.png
 social:
     website: https://hatchet.readthedocs.io/en/latest/
     github: https://github.com/hatchet/hatchet
@@ -14,5 +13,6 @@ social:
     reddit: 
     youtube: 
     twitch: 
+tagline: Hatchet is a Python-based library that can import data from various HPC profilers into a common data model based on Pandas DataFrames and a custom Graph class.
 ---
-Hatchet is a Python-based library that can import data from various HPC profilers into a common data model based on [Pandas](https://pandas.pydata.org/) DataFrames and a custom `Graph` class. It enables programmatic and reusable data analysis code for HPC profiling data.
+Hatchet is a Python-based library that can import data from various HPC profilers into a common data model based on <a href="https://pandas.pydata.org/">Pandas</a> DataFrames and a custom `Graph` class. It enables programmatic and reusable data analysis code for HPC profiling data.

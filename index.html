@@ -29,7 +29,7 @@ title: Index
                     {% endif %}
                     <div class="card-block">
                         <h4 class="card-title weight-3"><a href="{{ item.url | prepend:site.url }}">{{ item.title }}</a></h4>
-                        <div class="card-text">{{ item.content }}</div>
+                        <div class="card-text">{{ item.tagline }}</div>
                     </div>
                     <div class="card-footer">
                     {% for link in item.social %}
