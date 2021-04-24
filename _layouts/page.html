@@ -22,6 +22,7 @@ layout: default
         {% endif %}
         <h2 class="weight-3">{{ site.translation.description }}</h2>
         {{ content }}
+        <h2 class="weight-3">{{ site.translation.os }}</h2>
         <h2 class="weight-3">{{ site.translation.profiles }}</h2>
         <dl class="row">
             {% if page.social.website != null %}
@@ -63,6 +64,11 @@ layout: default
             <dt class="col-sm-3 weight-3"><i class="fa fa-fw fa-twitch" aria-hidden="true"></i> Twitch</dt>
             <dd class="col-sm-9">
                 <a href="{{ page.social.twitch }}" title="Visit {{ page.title }} on Twitch">{{ page.social.twitch }}</a>
+            </dd>
+            {% endif %} {% if page.social.docs != null %}
+            <dt class="col-sm-3 weight-3"><i class="fa fa-fw fas fa-book" aria-hidden="true"></i> Documentation</dt>
+            <dd class="col-sm-9">
+                <a href="{{ page.social.docs }}" title="Visit {{ page.title }} Docs">{{ page.social.docs }}</a>
             </dd>
             {% endif %}
         </dl>

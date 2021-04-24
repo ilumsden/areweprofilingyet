@@ -31,6 +31,34 @@ title: Index
                         <h4 class="card-title weight-3"><a href="{{ item.url | prepend:site.url }}">{{ item.title }}</a></h4>
                         <div class="card-text">{{ item.tagline }}</div>
                     </div>
+                    <div class="card-os">
+                    Supported OS:
+                    {% assign oses = item.os_support | sort %}
+                    {% for os_raw in oses %}
+                        {% assign os = os_raw | downcase %}
+                        {% assign os_icon = false %}
+                        {% assign os_title = false %}
+                        {% if os == 'linux' %}
+                            {% assign os_icon = 'fab fa-linux' %}
+                            {% assign os_title = 'Linux' %}
+                        {% elsif os == 'macos' %}
+                            {% assign os_icon = 'fab fa-apple' %}
+                            {% assign os_title = 'macOS' %}
+                        {% elsif os == 'windows' %}
+                            {% assign os_icon = 'fab fa-windows' %}
+                            {% assign os_title = 'Windows' %}
+                        {% else %}
+                            {% assign os_icon = false %}
+                            {% assign os_title = false %}
+                        {% endif %}
+                        {% if os_icon != false %}
+                        <a class="btn-icon" title="{{ os_title }}">
+                        <i class="fa fa-fw {{ os_icon }}" aria-hidden="true"></i>
+                        <span class="social-label hidden-xs-up">{{ os_title }}</span>
+                        </a>
+                        {% endif %}
+                    {% endfor %}
+                    </div>
                     <div class="card-footer">
                     {% for link in item.social %}
                         {% assign link_icon = false %}

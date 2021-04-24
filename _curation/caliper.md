@@ -2,6 +2,8 @@
 layout: page
 title: Caliper
 category: Research Profilers
+os_support:
+  - Linux
 thumbnail:
 gallery:
 social:
@@ -12,6 +14,7 @@ social:
     reddit: 
     youtube: 
     twitch: 
+    docs: https://software.llnl.gov/Caliper/
 tagline: Caliper is an HPC profiling tool that acts as the "glue" that connects various independent context annotations, measurement services, and data processing services.
 ---
 Caliper is a library to integrate performance profiling capabilities into applications. To use Caliper, developers mark code regions of interest using Caliper's annotation API. Applications can then enable performance profiling at runtime with Caliper's configuration API. Alternatively, you can configure Caliper through environment variables or config files.
