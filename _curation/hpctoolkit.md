@@ -1,7 +1,10 @@
 ---
 layout: page
 title: HPCToolkit
-category: Research Profilers
+category: 
+  - Research Profilers
+  - Profiling Tools
+  - Tracing Tools
 os_support:
   - Linux
   - Windows

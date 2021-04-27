@@ -1,7 +1,8 @@
 ---
 layout: page
 title: ParaProf
-category: Performance Data Analysis
+category: 
+  - Performance Data Analysis
 os_support:
   - Linux
   - Windows

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: hpcviewer
-category: Performance Data Analysis
+category: 
+  - Performance Data Analysis
 os_support:
   - Linux
   - Windows

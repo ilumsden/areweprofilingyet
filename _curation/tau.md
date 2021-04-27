@@ -1,7 +1,8 @@
 ---
 layout: page
 title: TAU
-category: Research Profilers
+category: 
+  - Research Profilers
 os_support:
   - Linux
   - Windows

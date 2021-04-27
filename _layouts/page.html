@@ -4,7 +4,7 @@ layout: default
 <div class="jumbotron">
     <div class="container">
         <h1 class="weight-3">{{ page.title }}</h1>
-        <div><span class="text-muted">{{ page.category }}</span></div>
+        <div><span class="text-muted">{{ page.category | join: ", " }}</span></div>
     </div>
 </div>
 
@@ -22,7 +22,22 @@ layout: default
         {% endif %}
         <h2 class="weight-3">{{ site.translation.description }}</h2>
         {{ content }}
+        {% if page.os_support %}
         <h2 class="weight-3">{{ site.translation.os }}</h2>
+        <dl class="row">
+        {% assign oses = page.os_support | sort %}
+        {% for os_raw in oses %}
+        {% assign os = os_raw | downcase %}
+        {% if os == 'linux' %}
+            <dt class="col-sm-3 weight-3"><i class="fa fa-fw fab fa-linux" aria-hidden="true"></i> Linux</dt>
+        {% elsif os == 'macos' %}
+            <dt class="col-sm-3 weight-3"><i class="fa fa-fw fab fa-apple" aria-hidden="true"></i> macOS</dt>
+        {% elsif os == 'windows' %}
+            <dt class="col-sm-3 weight-3"><i class="fa fa-fw fab fa-windows" aria-hidden="true"></i> Windows</dt>
+        {% endif %}
+        {% endfor %}
+        </dl>
+        {% endif %}
         <h2 class="weight-3">{{ site.translation.profiles }}</h2>
         <dl class="row">
             {% if page.social.website != null %}

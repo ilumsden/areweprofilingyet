@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Hatchet
-category: Performance Data Analysis
+category: 
+  - Performance Data Analysis
 os_support:
   - linux
   - macOS
@@ -9,6 +10,7 @@ os_support:
 thumbnail:
 gallery:
   - hatchet-logo.png
+  - hatchet-roundtrip-viz.png
 social:
     website: https://hatchet.readthedocs.io/en/latest/
     github: https://github.com/hatchet/hatchet

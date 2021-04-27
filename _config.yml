@@ -8,13 +8,13 @@ tagline:
 
 # PATH
 # The URL to your Github repository
-github: "https://github.com/ilumsden/areweprofilingyet" 
+github: "https://github.com/ilumsden/areweprofilingyet"
 # The path to your repository relative to Github
 baseurl: '/areweprofilingyet'
 # The full URL to your curation website
 url: 'http://127.0.0.1:4000/areweprofilingyet'
 # The content fpr the footer
-footer: 'Designed, built, and maintained by <a href="https://ilumsden.github.io">Ian Lumsden</a>. Based upon <a href="https://github.com/nihilor/kurator">Kurator, a jekyll theme</a>, by <a href="http://twitter.com/marklubkowitz">@marklubkowitz</a>.<br>Code licensed under <a href="https://github.com/nihilor/kurator/blob/master/LICENSE">MIT</a>. Content licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>'
+footer: 'Designed, built, and maintained by <a href="https://ilumsden.github.io">Ian Lumsden</a>. Based upon <a href="https://github.com/nihilor/kurator">Kurator, a jekyll theme</a>, by <a href="http://twitter.com/marklubkowitz">@marklubkowitz</a>.<br>Code licensed under <a href="https://github.com/nihilor/kurator/blob/master/LICENSE">MIT</a>.'
 
 # GOOGLE ANALYTICS
 # Want to use Google Analytics? Fill in your UA code. Leave blank to deactivate.
@@ -78,9 +78,9 @@ cta:
     title: 
     # The description of the Call to Action
     text:     # The button link
-    link: https://github.com/ilumsden/areweprofilingyet
+    link: http://127.0.0.1:4000/areweprofilingyet
     # The text of the button
-    linktext: 
+    linktext: AreWeProfilingYet
     # Visibility of Call to Action
     showinheader: false
     showasjumbotron: false

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Intel VTune
-category: Proprietary Profilers
+category: 
+  - Proprietary Profilers
 os_support:
   - Linux
   - Windows

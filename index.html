@@ -17,11 +17,21 @@ title: Index
 
 <div class="container">
     <div class="content">
-    {% assign groups = site.curation | group_by: "category" | sort: "name" %}
-    {% for group in groups %}
-        <h2 class="weight-3">{{ group.name }}</h2>
+    <!--{% assign groups = site.curation | group_by: "category" | sort: "name" %}
+        {% for group in groups %} {% endfor %}-->
+    {% assign allCategories = site.curation | map: "category" %}
+    {% assign catArray = "" | split: "" %}
+    {% for category in allCategories %}
+        {% assign catArray = catArray | concat: category | uniq %}
+    {% endfor %}
+    {% assign catArray = catArray | sort %}
+    {% assign curation = site.curation | sort: "name" %}
+    {% for category in catArray %}
+    <!--<h2 class="weight-3">{{ group.name }}</h2>-->
+        <h2 class="weight-3">{{ category }}</h2>
         <div class="row">
-            {% for item in group.items %}
+            {% for item in curation %}
+            {% if item.category contains category %}
             <div class="item col-xs-12 col-sm-6 col-md-4">
                 <div class="card">
                     {% if item.thumbnail != null %}
@@ -31,6 +41,7 @@ title: Index
                         <h4 class="card-title weight-3"><a href="{{ item.url | prepend:site.url }}">{{ item.title }}</a></h4>
                         <div class="card-text">{{ item.tagline }}</div>
                     </div>
+                    {% if item.os_support %}
                     <div class="card-os">
                     Supported OS:
                     {% assign oses = item.os_support | sort %}
@@ -59,6 +70,7 @@ title: Index
                         {% endif %}
                     {% endfor %}
                     </div>
+                    {% endif %}
                     <div class="card-footer">
                     {% for link in item.social %}
                         {% assign link_icon = false %}
@@ -112,6 +124,7 @@ title: Index
                     
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     {% endfor %}

@@ -4,3 +4,4 @@ assets/kurator.png
 *-cache/
 .bundle/
 vendor/
+Gemfile.lock

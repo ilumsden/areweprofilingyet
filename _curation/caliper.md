@@ -1,13 +1,16 @@
 ---
 layout: page
 title: Caliper
-category: Research Profilers
+category: 
+  - Research Profilers
+  - Profiling Tools
+  - Tracing Tools
 os_support:
   - Linux
 thumbnail:
 gallery:
 social:
-    website: https://software.llnl.gov/Caliper/
+    website: https://computing.llnl.gov/projects/caliper
     github: https://github.com/LLNL/Caliper
     twitter:
     facebook:
