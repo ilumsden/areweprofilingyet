@@ -1,8 +1,6 @@
 _site/
-.sass-cache/
-_config.yml
-Gemfile.lock
-Gemfile
 watch.bat
 assets/kurator.png
-.jekyll-cache/
+*-cache/
+.bundle/
+vendor/
