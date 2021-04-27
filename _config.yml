@@ -12,7 +12,9 @@ github: "https://github.com/ilumsden/areweprofilingyet"
 # The path to your repository relative to Github
 baseurl: '/areweprofilingyet'
 # The full URL to your curation website
-url: 'http://127.0.0.1:4000/areweprofilingyet'
+# Uncomment when testing locally
+# url: 'http://127.0.0.1:4000/areweprofilingyet'
+url: 'https://ilumsden.github.io/areweprofilingyet'
 # The content fpr the footer
 footer: 'Designed, built, and maintained by <a href="https://ilumsden.github.io">Ian Lumsden</a>. Based upon <a href="https://github.com/nihilor/kurator">Kurator, a jekyll theme</a>, by <a href="http://twitter.com/marklubkowitz">@marklubkowitz</a>.<br>Code licensed under <a href="https://github.com/nihilor/kurator/blob/master/LICENSE">MIT</a>.'
 
@@ -58,7 +60,9 @@ opengraph:
     # The description of your website, specifically texted for Opengraph.
     description: A curation of code profiling and performance analysis tools
     # The full url
-    url: ''
+    # Uncomment when testing
+    # url: ''
+    url: https://ilumsden.github.io/areweprofilingyet
     # The sitename
     site_name: AreWeProfilingYet?
     # An full url to an image for your website
@@ -78,7 +82,9 @@ cta:
     title: 
     # The description of the Call to Action
     text:     # The button link
-    link: http://127.0.0.1:4000/areweprofilingyet
+    # Uncomment when testing locally
+    # link: http://127.0.0.1:4000/areweprofilingyet
+    link: https://ilumsden.github.io/areweprofilingyet
     # The text of the button
     linktext: AreWeProfilingYet
     # Visibility of Call to Action
